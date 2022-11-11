@@ -10,10 +10,18 @@ npm install --save @jrc03c/prompt
 
 # Usage
 
+The `prompt` function can be used in `Promise` mode or callback mode:
+
 ```js
 const prompt = require("@jrc03c/prompt")
 
-prompt("Hey! What's your name? ").then(name => {
+// Promise mode
+prompt("Hey! What's your name?").then(name => {
+  console.log(`Nice to meet you, ${name}!`)
+})
+
+// Callback mode
+prompt("Hey! What's your name?", name => {
   console.log(`Nice to meet you, ${name}!`)
 })
 ```

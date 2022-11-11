@@ -1,7 +1,7 @@
 const process = require("process")
 const readline = require("readline")
 
-function prompt(text) {
+function prompt(text, callback) {
   return new Promise((resolve, reject) => {
     try {
       if (!text.match(/\s$/g)) {
@@ -14,6 +14,7 @@ function prompt(text) {
       })
 
       rl.question(text, response => {
+        if (callback) callback(response)
         resolve(response)
         rl.close()
       })
