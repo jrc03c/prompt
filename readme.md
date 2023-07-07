@@ -25,3 +25,13 @@ prompt("Hey! What's your name?", name => {
   console.log(`Nice to meet you, ${name}!`)
 })
 ```
+
+You can also pass an optional boolean parameter to indicate that the text should be hidden with asterisks, like when typing a password.
+
+```js
+const isHidden = true
+
+prompt("Password:", isHidden).then(password => {
+  console.log("Your password is:", password)
+})
+```
