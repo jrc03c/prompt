@@ -1,6 +1,6 @@
 {
   "name": "@jrc03c/prompt",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "keywords": [
@@ -8,5 +8,8 @@
     "prompt"
   ],
   "author": "jrc03c",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "pub": "npm version patch --force && npm publish --access=public"
+  }
 }
