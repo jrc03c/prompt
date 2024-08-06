@@ -1,3 +1,7 @@
+> ⚠️ **NOTE:** ⚠️ This project is being merged into a monorepo [here](https://github.com/jrc03c/monorepo/tree/main/packages/prompt). This repo will soon be archived.
+
+---
+
 # Intro
 
 This is a little package that makes it easy to prompt for user input in a Node program. There are better tools out there, but I just wanted something simple and easy.
